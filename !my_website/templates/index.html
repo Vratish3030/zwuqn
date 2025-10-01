@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio 🤍</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1><B>Yoo! What's up? I'm Vratish Chaudhary</B></h1>
+        <p>Explore My Work, Discover Vratish's Portfolio...</p>
+    </header>
+<div class="ticker-card">
+    <p>🚀 Welcome to my portfolio website! | Check out my projects below 👨‍💻 | Contact me anytime 📧</p>
+</div>
+    <section>
+    <h2>ABOUT ME 😃</h2>
+    <p>
+	Hi! This Is Vratish Chaudhary .....
+	</p>
+	</section>
+
+
+<section>
+    <h2>PROJECTS 💻</h2>
+    <ul>
+        <li>Portfolio Website (HTML, CSS, Python)</li>
+        <li>Calculator App (Python)</li>
+        <li>Mini Game (Python & Pygame)</li>
+    </ul>
+</section>
+
+
+<section>
+    </section>
+<section>
+
+    <h2>CONTACT ME 📞</h2>
+   <form action="/contact" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+	
+	 <div class="contact-container">
+    <div class="contact-card">
+        EMAIL :- vratish0001@gmail.com 
+
+      CONTACT :- 7535875XX7
+    </div>
+</div>
+    <button type="submit">Send</button>
+</form>
+</section>
+
+</body>
+</html>

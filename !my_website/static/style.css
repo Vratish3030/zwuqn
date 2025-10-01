@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 1;
+    background: linear-gradient(to right, #F9C6D7, #ADD8E6);
+}
+
+
+header {
+    background-color: #888;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+section {
+    padding: 10px 50px;
+    margin: 5px auto;
+    background-color: none;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #888;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;       /* centers the form horizontally */
+    background-color: rgba(255, 255, 255, 0.9); /* slightly transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+    width: 100%;          /* make inputs fill the form width */
+    box-sizing: border-box; /* ensures padding doesn't break width */
+}
+
+button {
+    padding: 10px;
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+.code-container {
+    display: flex;
+    flex-wrap: wrap;        /* allows wrapping to next line on small screens */
+    gap: 15px;              /* space between boxes */
+    justify-content: center;/* center boxes horizontally */
+}
+
+.code-box {
+    background-color: #90EE90;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 45%;             /* two boxes per row */
+    margin-bottom: 20px;
+    overflow-x: auto;       /* horizontal scroll for long lines */
+}
+
+.code-box pre {
+    background-color: #888;
+    padding: 50px;
+    border-radius: 90px;
+    overflow-x: auto;       /* horizontal scroll */
+}
+}
+
+.song-img {
+    width: 250px;               /* adjust size as needed */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 69px;         /* optional rounded corners */
+
+}
+.contact-card {
+    display: inline-block;          /* makes the border hug the text */
+    text-align: centre;             /* center text inside the box */
+    padding: 20px 25px;             /* space inside the box */
+    border: 2px solid black;        /* bold black border */
+    border-radius: 30px;            /* rounded corners */
+    background-color: #f9f9f9;      /* subtle background */
+    font-weight: bold;               /* bold text */
+    margin: 20px auto;              /* center the box horizontally */
+}
+.ticker {
+    width: 100%;
+    background: none;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 5px 0;
+    border: 1px solid ;   /* bold border */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.ticker p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 40s linear infinite;
+}
+
+@keyframes ticker {
+    1%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+.ticker-card {
+    background-color: #none;   /* same as other boxes */
+    border: 1px solid black;      /* bold border like your other cards */
+    border-radius: 11px;          /* rounded corners */
+    padding: 15px 20px;
+    margin: 20px auto;            /* center horizontally with spacing */
+    width: 80%;                   /* adjust width to your liking */
+    text-align: center;           /* center the text */
+    font-weight: bold;
+    overflow: hidden;             /* hides overflow text for animation */
+}
+
+.ticker-card p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker-scroll 40s linear infinite;
+}
+
+@keyframes ticker-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
